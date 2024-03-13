@@ -49,4 +49,4 @@ const arr2:{x: number, y: number}[] = [];
 arr2.push({x:0, y:0});
 arr2.push({x:1, y:1});
 
-console.log(arr);
+console.log(arr2);
