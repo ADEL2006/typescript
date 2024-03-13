@@ -106,8 +106,18 @@ type Admin = {
     userName: string,
     level: number
 }
+function info1(user: Admin | User){
+    console.log(user.userName);
+}
 
 const user: User = { id: 'u1', userName: 'userOne' };
 const admin: Admin = { id: 'a1', userName: 'admin1', level: 1 };
-info(user);
-info(admin);
+info1(user);
+info1(admin);
+
+interface user {id:number};
+interface user {name: string};
+function printAll(user: user){
+    console.log(user.id, user.name);
+}
+printAll({ id: 1, name: 'user'});

@@ -75,7 +75,16 @@ function printTelephone(telephone) {
 }
 printTelephone('010-1111-1111');
 printTelephone(102222222);
+function info1(user) {
+    console.log(user.userName);
+}
 var user = { id: 'u1', userName: 'userOne' };
 var admin = { id: 'a1', userName: 'admin1', level: 1 };
-info(user);
-info(admin);
+info1(user);
+info1(admin);
+;
+;
+function printAll(user) {
+    console.log(user.id, user.name);
+}
+printAll({ id: 1, name: 'user' });
