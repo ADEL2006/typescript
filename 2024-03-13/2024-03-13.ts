@@ -21,3 +21,9 @@ function swap(arg: [number, number]): [number, number] {
     return [arg[1], arg[0]];
 }
 console.log(swap([5, 10]));
+
+function sayMyName(firstname: string, lastname: string): string {
+    return `my name: ${firstname} ${lastname}`;
+};
+
+console.log(sayMyName('kim', 'tae'));

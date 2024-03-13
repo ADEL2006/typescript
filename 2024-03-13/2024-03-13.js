@@ -17,3 +17,8 @@ function swap(arg) {
     return [arg[1], arg[0]];
 }
 console.log(swap([5, 10]));
+function sayMyName(firstname, lastname) {
+    return "my name: ".concat(firstname, " ").concat(lastname);
+}
+;
+console.log(sayMyName('kim', 'tae'));
