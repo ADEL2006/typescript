@@ -40,3 +40,25 @@ var arr2 = [];
 arr2.push({ x: 0, y: 0 });
 arr2.push({ x: 1, y: 1 });
 console.log(arr2);
+function logText(text) {
+    console.log(text);
+}
+logText('hi');
+logText(100);
+function test(arg) {
+    if (typeof arg == 'number') {
+        return arg;
+    }
+    else {
+        return arg.length;
+    }
+}
+console.log(test(1));
+console.log(test('hello'));
+var arr3 = [];
+arr3.push(1);
+arr3.push(true);
+arr3.push(2);
+arr3.push(false);
+arr3.push(3);
+arr3.forEach(function (i) { console.log(typeof i); });
