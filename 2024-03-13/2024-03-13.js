@@ -22,3 +22,21 @@ function sayMyName(firstname, lastname) {
 }
 ;
 console.log(sayMyName('kim', 'tae'));
+function toLocationstring(arg) {
+}
+var result = toLocationstring({ x: 0, y: 0 });
+console.log(result);
+function printPoint(arg) {
+    if (arg.color !== undefined) { // color값이 undefined가 아니라면
+        console.log(arg.x, arg.y, arg.color);
+    }
+    else {
+        console.log(arg.x, arg.y);
+    }
+}
+printPoint({ x: 0, y: 0, color: 'red' });
+printPoint({ x: 1, y: 1 });
+var arr2 = [];
+arr2.push({ x: 0, y: 0 });
+arr2.push({ x: 1, y: 1 });
+console.log(arr);

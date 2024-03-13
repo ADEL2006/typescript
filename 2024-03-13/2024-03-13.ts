@@ -27,3 +27,26 @@ function sayMyName(firstname: string, lastname: string): string {
 };
 
 console.log(sayMyName('kim', 'tae'));
+
+function toLocationstring(arg: { x: number, y: number }) {
+
+}
+const result = toLocationstring({ x: 0, y: 0 });
+console.log(result);
+
+function printPoint(arg: { x: number, y: number, color?: string }) {
+    if (arg.color !== undefined) { // color값이 undefined가 아니라면
+        console.log(arg.x, arg.y, arg.color);
+    } else {
+        console.log(arg.x, arg.y);
+    }
+}
+
+printPoint({ x: 0, y: 0, color: 'red' });
+printPoint({ x: 1, y: 1 });
+
+const arr2:{x: number, y: number}[] = [];
+arr2.push({x:0, y:0});
+arr2.push({x:1, y:1});
+
+console.log(arr);
