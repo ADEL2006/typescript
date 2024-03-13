@@ -45,9 +45,9 @@ function printPoint(arg: { x: number, y: number, color?: string }) {
 printPoint({ x: 0, y: 0, color: 'red' });
 printPoint({ x: 1, y: 1 });
 
-const arr2:{x: number, y: number}[] = [];
-arr2.push({x:0, y:0});
-arr2.push({x:1, y:1});
+const arr2: { x: number, y: number }[] = [];
+arr2.push({ x: 0, y: 0 });
+arr2.push({ x: 1, y: 1 });
 
 console.log(arr2);
 
@@ -61,14 +61,14 @@ logText(100);
 function test(arg: string | number) {
     if (typeof arg == 'number') {
         return arg;
-    }else {
+    } else {
         return arg.length;
     }
 }
 console.log(test(1));
 console.log(test('hello'));
 
-const arr3:(number | boolean)[] = [];
+const arr3: (number | boolean)[] = [];
 
 arr3.push(1);
 arr3.push(true);
@@ -76,4 +76,10 @@ arr3.push(2);
 arr3.push(false);
 arr3.push(3);
 
-arr3.forEach((i) => {console.log(typeof i)});
+arr3.forEach((i) => { console.log(typeof i) });
+
+function info(user: { id: number | string, userName: string }) {
+    console.log(user.id, user.userName);
+}
+info({ id: 1, userName: 'u1' });
+info({ id: '2', userName: 'u2' });

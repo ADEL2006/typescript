@@ -62,3 +62,8 @@ arr3.push(2);
 arr3.push(false);
 arr3.push(3);
 arr3.forEach(function (i) { console.log(typeof i); });
+function info(user) {
+    console.log(user.id, user.userName);
+}
+info({ id: 1, userName: 'u1' });
+info({ id: '2', userName: 'u2' });
