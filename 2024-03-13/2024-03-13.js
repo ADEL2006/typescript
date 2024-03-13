@@ -67,3 +67,15 @@ function info(user) {
 }
 info({ id: 1, userName: 'u1' });
 info({ id: '2', userName: 'u2' });
+;
+;
+var bear = { name: 'Pooth', honey: true };
+function printTelephone(telephone) {
+    console.log(telephone);
+}
+printTelephone('010-1111-1111');
+printTelephone(102222222);
+var user = { id: 'u1', userName: 'userOne' };
+var admin = { id: 'a1', userName: 'admin1', level: 1 };
+info(user);
+info(admin);

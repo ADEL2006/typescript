@@ -83,3 +83,31 @@ function info(user: { id: number | string, userName: string }) {
 }
 info({ id: 1, userName: 'u1' });
 info({ id: '2', userName: 'u2' });
+
+interface Animal { name: string };
+interface Bear extends Animal {
+    honey: boolean;
+};
+const bear = { name: 'Pooth', honey: true };
+
+type TELEPHONE = string | number;
+function printTelephone(telephone: TELEPHONE) {
+    console.log(telephone);
+}
+printTelephone('010-1111-1111');
+printTelephone(102222222);
+
+type User = {
+    id: string,
+    userName: string
+};
+type Admin = {
+    id: string,
+    userName: string,
+    level: number
+}
+
+const user: User = { id: 'u1', userName: 'userOne' };
+const admin: Admin = { id: 'a1', userName: 'admin1', level: 1 };
+info(user);
+info(admin);
