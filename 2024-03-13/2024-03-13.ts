@@ -117,7 +117,7 @@ info1(admin);
 
 interface user {id:number};
 interface user {name: string};
-function printAll(user: user){
-    console.log(user.id, user.name);
-}
-printAll({ id: 1, name: 'user'});
+// function printAll(user: user){
+//     console.log(user.id, user.name);
+// }
+// printAll({ id: 1, name: 'user'});
