@@ -45,9 +45,9 @@ function printPoint(arg: { x: number, y: number, color?: string }) {
 printPoint({ x: 0, y: 0, color: 'red' });
 printPoint({ x: 1, y: 1 });
 
-const arr2: { x: number, y: number }[] = [];
-arr2.push({ x: 0, y: 0 });
-arr2.push({ x: 1, y: 1 });
+// const arr2: { x: number, y: number }[] = [];
+// arr2.push({ x: 0, y: 0 });
+// arr2.push({ x: 1, y: 1 });
 
 console.log(arr2);
 

@@ -24,11 +24,11 @@ function max(num1: number, num2: number): number {
 
 console.log(max(1, 2));
 
-const arr = [10, 20, 30];
-arr.forEach((a: number): number => {
-    console.log(a);
-    return a;
-});
+// const arr = [10, 20, 30];
+// arr.forEach((a: number): number => {
+//     console.log(a);
+//     return a;
+// });
 
 // Array<string>
 // string[]
