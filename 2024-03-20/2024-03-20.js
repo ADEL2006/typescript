@@ -12,3 +12,16 @@ console.log(totallength('a', 'b', 'c'));
 console.log(totallength('hello'));
 var arr = ['a', 'b', 'hello'];
 console.log(totallength.apply(void 0, arr));
+;
+var btnEnter = {
+    x: 0,
+    y: 0,
+    width: 20,
+    height: 10,
+    text: 'Enter',
+    draw: function () { return console.log('dfsw'); },
+    drawText: function () {
+        console.log('drawText');
+    }
+};
+console.log(btnEnter);

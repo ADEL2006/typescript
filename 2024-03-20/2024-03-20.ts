@@ -41,14 +41,19 @@ interface widget {
 interface Button extends widget {
     text: string;
     color?: string;
+    draw: () => void;
     drawText(): void;
-    doraw: () => void;
 };
 const btnEnter: Button = {
-    x:
-    y:
-    draw: () => console.log('dfsw');
+    x:0,
+    y:0,
+    width: 20,
+    height: 10,
+    text:'Enter',
+    draw: () => console.log('dfsw'),
     drawText(){
         console.log('drawText');
     }
 }
+
+console.log(btnEnter);
