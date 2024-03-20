@@ -24,13 +24,13 @@ console.log(totallength(...arr));
 // interface Admin extends User{
 //     categories: string[];
 // }
-type User = {
-    UserId: string;
-    password: string;
-}
-type Admin = User & {
-    categories: string[];
-}
+// type User = {
+//     UserId: string;
+//     password: string;
+// }
+// type Admin = User & {
+//     categories: string[];
+// }
 
 interface widget {
     x: number;
@@ -104,16 +104,30 @@ type OptionType = 'useIcon' | 'useTitle' | 'useCancel';
 type popupOption = {
     [key in OptionType]: boolean;
 }
-const option1:Partial<popupOption> = {
-    useIcon:true,
+const option1: Partial<popupOption> = {
+    useIcon: true,
 }
 
-interface Hero{
+interface Hero {
     name: string;
     skill: string;
 }
 
 type HeroPropCheck = {
     // [H in ketof Hero]: boolean;
-    [H in keyof 'name' | 'skill']: boolean; 
+    [H in keyof 'name' | 'skill']: boolean;
 }
+
+interface Profile {
+    id: string;
+    address: string;
+    name: string;
+}
+
+type ProfileId = Pick<Profile, 'id' | 'name'>;
+
+type User = Omit<Profile, 'address'>;
+
+type Optional = Partial<Profile>;
+var a: Optional = {};
+var b: Optional = { id: "1" };

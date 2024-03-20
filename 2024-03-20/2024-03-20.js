@@ -49,3 +49,5 @@ var salary2 = {
 var option1 = {
     useIcon: true,
 };
+var a = {};
+var b = { id: "1" };
