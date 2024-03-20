@@ -99,8 +99,21 @@ var salary2: SalaryInfo = {
     senior: '700원'
 }
 
-type OptionType = 'iserIcon' | 'useTitle' | 'useCancel';
+type OptionType = 'useIcon' | 'useTitle' | 'useCancel';
 
 type popupOption = {
     [key in OptionType]: boolean;
+}
+const option1:Partial<popupOption> = {
+    useIcon:true,
+}
+
+interface Hero{
+    name: string;
+    skill: string;
+}
+
+type HeroPropCheck = {
+    // [H in ketof Hero]: boolean;
+    [H in keyof 'name' | 'skill']: boolean; 
 }

@@ -46,3 +46,6 @@ var salary2 = {
     mid: '400원',
     senior: '700원'
 };
+var option1 = {
+    useIcon: true,
+};
