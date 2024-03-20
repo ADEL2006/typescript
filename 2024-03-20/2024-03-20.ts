@@ -195,3 +195,11 @@ function completetodo(index: number, todo: TodoItem) {
     todo.done = true;
     todoItems.splice(index, 1, todo);
 }
+
+function logFirstTodo(): TodoItem {
+    return todoItems[0];
+}
+
+function showCompleted(): TodoItem[] {
+    return todoItems.filter(item => item.done);
+}

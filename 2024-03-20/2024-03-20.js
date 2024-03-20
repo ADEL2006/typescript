@@ -96,3 +96,9 @@ function completetodo(index, todo) {
     todo.done = true;
     todoItems.splice(index, 1, todo);
 }
+function logFirstTodo() {
+    return todoItems[0];
+}
+function showCompleted() {
+    return todoItems.filter(function (item) { return item.done; });
+}
