@@ -131,3 +131,29 @@ type User = Omit<Profile, 'address'>;
 type Optional = Partial<Profile>;
 var a: Optional = {};
 var b: Optional = { id: "1" };
+
+// Exclude: 유니언 타입에서 특정 타입을 제외
+type Lang = "C" | "Java" | "TypeScript" | "React";
+type LangEx = Exclude<Lang, "Java" | "C">;
+
+// Record: 타입 1개는 속성의 키, 다른 타입 1개는 속성 값 받아서 객체 타입으로 변환
+type HeroProfile = {
+    skill: string;
+    age: number;
+}
+type Heronames = "aaa" | "bbb" | "ccc";
+type Heros = Record<Heronames, HeroProfile>;
+var avenger:Heros = {
+    "aaa":{
+        skill: "dd",
+        age: 100
+    },
+    "bbb": {
+        skill: "ee",
+        age: 101
+    },
+    "ccc": {
+        skill: "ff",
+        age: 102
+    }
+}

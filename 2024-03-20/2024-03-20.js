@@ -51,3 +51,17 @@ var option1 = {
 };
 var a = {};
 var b = { id: "1" };
+var avenger = {
+    "aaa": {
+        skill: "dd",
+        age: 100
+    },
+    "bbb": {
+        skill: "ee",
+        age: 101
+    },
+    "ccc": {
+        skill: "ff",
+        age: 102
+    }
+};
