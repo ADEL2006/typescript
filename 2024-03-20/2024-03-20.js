@@ -35,3 +35,14 @@ var postBody = {
 };
 var longerString = postBody.operation("TypeScript", "JS");
 console.log("".concat(longerString));
+var greet = function (name) {
+    return "Hello, ".concat(name, "!");
+};
+var salary = {
+    junior: '100원',
+};
+var salary2 = {
+    junior: '100원',
+    mid: '400원',
+    senior: '700원'
+};

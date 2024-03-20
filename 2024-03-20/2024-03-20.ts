@@ -45,13 +45,13 @@ interface Button extends widget {
     drawText(): void;
 };
 const btnEnter: Button = {
-    x:0,
-    y:0,
+    x: 0,
+    y: 0,
     width: 20,
     height: 10,
-    text:'Enter',
+    text: 'Enter',
     draw: () => console.log('dfsw'),
-    drawText(){
+    drawText() {
         console.log('drawText');
     }
 }
@@ -59,14 +59,14 @@ const btnEnter: Button = {
 console.log(`Button 위치: (${btnEnter.x}, ${btnEnter.y})`);
 btnEnter.draw();
 
-interface ContentBody{
+interface ContentBody {
     content: string,
-    operation: (s1:string, s2:string) => string;
+    operation: (s1: string, s2: string) => string;
 };
 
-const postBody:ContentBody = {
+const postBody: ContentBody = {
     content: 'hello',
-    operation(arg1: string, arg2: string):string{
+    operation(arg1: string, arg2: string): string {
         return arg1.length > arg2.length ? arg1 : arg2;
     }
 }
@@ -75,7 +75,32 @@ console.log(`${longerString}`);
 
 type GreetFunction = (name: string) => string;
 
-let greet:GreetFunction = function (name:string) {
+let greet: GreetFunction = function (name: string) {
     return `Hello, ${name}!`;
 };
 
+interface SalaryMap {
+    [level: string]: string;
+}
+
+var salary = {
+    junior: '100원',
+}
+
+interface SalaryInfo {
+    junior: string,
+    mid: string,
+    senior: string,
+}
+
+var salary2: SalaryInfo = {
+    junior: '100원',
+    mid: '400원',
+    senior: '700원'
+}
+
+type OptionType = 'iserIcon' | 'useTitle' | 'useCancel';
+
+type popupOption = {
+    [key in OptionType]: boolean;
+}
