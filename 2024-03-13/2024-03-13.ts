@@ -49,7 +49,7 @@ printPoint({ x: 1, y: 1 });
 // arr2.push({ x: 0, y: 0 });
 // arr2.push({ x: 1, y: 1 });
 
-console.log(arr2);
+// console.log(arr2);
 
 function logText(text: string | number) {
     console.log(text);
@@ -97,23 +97,23 @@ function printTelephone(telephone: TELEPHONE) {
 printTelephone('010-1111-1111');
 printTelephone(102222222);
 
-type User = {
-    id: string,
-    userName: string
-};
-type Admin = {
-    id: string,
-    userName: string,
-    level: number
-}
-function info1(user: Admin | User){
-    console.log(user.userName);
-}
+// type User = {
+//     id: string,
+//     userName: string
+// };
+// type Admin = {
+//     id: string,
+//     userName: string,
+//     level: number
+// }
+// function info1(user: Admin | User){
+//     console.log(user.userName);
+// }
 
-const user: User = { id: 'u1', userName: 'userOne' };
-const admin: Admin = { id: 'a1', userName: 'admin1', level: 1 };
-info1(user);
-info1(admin);
+// const user: User = { id: 'u1', userName: 'userOne' };
+// const admin: Admin = { id: 'a1', userName: 'admin1', level: 1 };
+// info1(user);
+// info1(admin);
 
 interface user {id:number};
 interface user {name: string};

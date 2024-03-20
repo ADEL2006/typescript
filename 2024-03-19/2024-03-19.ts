@@ -33,16 +33,16 @@ function toggleSign(num: number) {
 console.log(ex(2, square));
 console.log(ex(3, square));
 
-function middle<T>(arr: T[]): T {
-    const index = Math.floor((arr.length / 2));
-    return arr[index];
-}
+// function middle<T>(arr: T[]): T {
+//     const index = Math.floor((arr.length / 2));
+//     return arr[index];
+// }
 
-const arr = [1, 2, 3, 4, 5];
-const arr2 = ['a', 'b', 'c', 'd'];
+// const arr = [1, 2, 3, 4, 5];
+// const arr2 = ['a', 'b', 'c', 'd'];
 
-console.log(middle(arr));
-console.log(middle(arr2));
+// console.log(middle(arr));
+// console.log(middle(arr2));
 
 function getRange(num1: number, num2?: number): number[] {
     const arr: number[] = [];
