@@ -24,4 +24,14 @@ var btnEnter = {
         console.log('drawText');
     }
 };
-console.log(btnEnter);
+console.log("Button \uC704\uCE58: (".concat(btnEnter.x, ", ").concat(btnEnter.y, ")"));
+btnEnter.draw();
+;
+var postBody = {
+    content: 'hello',
+    operation: function (arg1, arg2) {
+        return arg1.length > arg2.length ? arg1 : arg2;
+    }
+};
+var longerString = postBody.operation("TypeScript", "JS");
+console.log("".concat(longerString));

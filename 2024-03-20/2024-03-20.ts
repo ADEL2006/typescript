@@ -56,4 +56,26 @@ const btnEnter: Button = {
     }
 }
 
-console.log(btnEnter);
+console.log(`Button 위치: (${btnEnter.x}, ${btnEnter.y})`);
+btnEnter.draw();
+
+interface ContentBody{
+    content: string,
+    operation: (s1:string, s2:string) => string;
+};
+
+const postBody:ContentBody = {
+    content: 'hello',
+    operation(arg1: string, arg2: string):string{
+        return arg1.length > arg2.length ? arg1 : arg2;
+    }
+}
+const longerString = postBody.operation("TypeScript", "JS");
+console.log(`${longerString}`);
+
+type GreetFunction = (name: string) => string;
+
+let greet:GreetFunction = function (name:string) {
+    return `Hello, ${name}!`;
+};
+
