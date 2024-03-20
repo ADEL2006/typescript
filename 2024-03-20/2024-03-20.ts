@@ -203,3 +203,12 @@ function logFirstTodo(): TodoItem {
 function showCompleted(): TodoItem[] {
     return todoItems.filter(item => item.done);
 }
+
+function addTwoTodoItems(todo1: TodoItem, todo2: TodoItem): void {
+    addTodo(todo1);
+    addTodo(todo2);
+}
+
+function log() {
+    console.log(todoItems);
+}

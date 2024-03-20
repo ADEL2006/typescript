@@ -102,3 +102,10 @@ function logFirstTodo() {
 function showCompleted() {
     return todoItems.filter(function (item) { return item.done; });
 }
+function addTwoTodoItems(todo1, todo2) {
+    addTodo(todo1);
+    addTodo(todo2);
+}
+function log() {
+    console.log(todoItems);
+}
