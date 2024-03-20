@@ -143,8 +143,8 @@ type HeroProfile = {
 }
 type Heronames = "aaa" | "bbb" | "ccc";
 type Heros = Record<Heronames, HeroProfile>;
-var avenger:Heros = {
-    "aaa":{
+var avenger: Heros = {
+    "aaa": {
         skill: "dd",
         age: 100
     },
@@ -156,4 +156,42 @@ var avenger:Heros = {
         skill: "ff",
         age: 102
     }
+}
+
+interface TodoItem {
+    id: number;
+    title: string
+    done: boolean;
+}
+let todoItems: TodoItem[]
+// function fetchTodoItems(): { id: number; title: string; done: boolean }[] {
+//     const todos = [
+//         { id: 1, title: '안녕', done: false },
+//         { id: 2, title: '타입', done: false },
+//         { id: 3, title: '스크립트', done: false },
+//     ];
+//     return todos;
+// }
+function fetchTodoItems(): TodoItem[] {
+    const todos = [
+        { id: 1, title: '안녕', done: false },
+        { id: 2, title: '타입', done: false },
+        { id: 3, title: '스크립트', done: false },
+    ];
+    return todos;
+}
+
+function fetchTodos(): TodoItem[] {
+    const todos: TodoItem[] = fetchTodoItems();
+    return todos;
+}
+function addTodo(todo: TodoItem): void {
+    todoItems.push(todo);
+}
+function deleteTodo(index: number) {
+    todoItems.splice(index, 1);
+}
+function completetodo(index: number, todo: TodoItem) {
+    todo.done = true;
+    todoItems.splice(index, 1, todo);
 }

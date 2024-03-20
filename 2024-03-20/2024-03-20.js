@@ -65,3 +65,34 @@ var avenger = {
         age: 102
     }
 };
+var todoItems;
+// function fetchTodoItems(): { id: number; title: string; done: boolean }[] {
+//     const todos = [
+//         { id: 1, title: '안녕', done: false },
+//         { id: 2, title: '타입', done: false },
+//         { id: 3, title: '스크립트', done: false },
+//     ];
+//     return todos;
+// }
+function fetchTodoItems() {
+    var todos = [
+        { id: 1, title: '안녕', done: false },
+        { id: 2, title: '타입', done: false },
+        { id: 3, title: '스크립트', done: false },
+    ];
+    return todos;
+}
+function fetchTodos() {
+    var todos = fetchTodoItems();
+    return todos;
+}
+function addTodo(todo) {
+    todoItems.push(todo);
+}
+function deleteTodo(index) {
+    todoItems.splice(index, 1);
+}
+function completetodo(index, todo) {
+    todo.done = true;
+    todoItems.splice(index, 1, todo);
+}
