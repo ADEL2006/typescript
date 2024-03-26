@@ -214,3 +214,6 @@ function addTwoTodoItems() {
 function log() {
     console.log(todoItems);
 }
+todoItems = fetchTodoItems();
+addTwoTodoItems();
+log();
