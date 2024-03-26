@@ -24,9 +24,9 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 var joo = new Person('형주', '달리기');
-console.log(joo.name);
-console.log(joo.skill);
-joo.sayHi();
+console.log(joo.name); // 형주
+console.log(joo.skill); // 달리기
+joo.sayHi(); // hi
 var Animal = /** @class */ (function () {
     function Animal(name) {
         this.name = name;
