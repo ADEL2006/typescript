@@ -204,9 +204,11 @@ function showCompleted(): TodoItem[] {
     return todoItems.filter(item => item.done);
 }
 
-function addTwoTodoItems(todo1: TodoItem, todo2: TodoItem): void {
-    addTodo(todo1);
-    addTodo(todo2);
+function addTwoTodoItems() {
+    const newTodo1:TodoItem = {id: todoItems.length+1, title: '할일추가1', done: false};
+    const newTodo2:TodoItem = {id: todoItems.length+2, title: '할일추가2', done: false};
+    addTodo(newTodo1);
+    addTodo(newTodo2);
 }
 
 function log() {
