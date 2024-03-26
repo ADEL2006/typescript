@@ -102,10 +102,15 @@ function logFirstTodo() {
 function showCompleted() {
     return todoItems.filter(function (item) { return item.done; });
 }
-function addTwoTodoItems(todo1, todo2) {
-    addTodo(todo1);
-    addTodo(todo2);
+function addTwoTodoItems() {
+    var newTodo1 = { id: todoItems.length + 1, title: '할일추가1', done: false };
+    var newTodo2 = { id: todoItems.length + 2, title: '할일추가2', done: false };
+    addTodo(newTodo1);
+    addTodo(newTodo2);
 }
 function log() {
     console.log(todoItems);
 }
+todoItems = fetchTodoItems();
+addTwoTodoItems();
+log();
