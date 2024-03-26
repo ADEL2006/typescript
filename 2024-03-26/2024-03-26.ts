@@ -1,11 +1,11 @@
 class Person {
-    name:string;
-    skill:string;
-    constructor(name:string, skill:string){
+    name: string;
+    skill: string;
+    constructor(name: string, skill: string) {
         this.name = name;
         this.skill = skill;
     }
-    sayHi():void {
+    sayHi(): void {
         console.log('hi');
     }
 }
@@ -18,25 +18,25 @@ joo.sayHi();    // hi
 
 class Animal {
     name: string;
-    constructor(name:string){
+    constructor(name: string) {
         this.name = name;
     }
 
-    move(distanceInMeters:number = 0) {
+    move(distanceInMeters: number = 0) {
         console.log(`${this.name} moved ${distanceInMeters}m`);
     }
 }
 
 class Dog extends Animal {
-    constructor(name:string){
+    constructor(name: string) {
         super(name);
     }
-    move (distanceInMeters = 5) {
+    move(distanceInMeters = 5) {
         console.log('Barking...');
         super.move(distanceInMeters);
     }
     woof(times: number) {
-        for(let i = 0; i < times; i++) {
+        for (let i = 0; i < times; i++) {
             console.log("Woof!");
         }
     }
