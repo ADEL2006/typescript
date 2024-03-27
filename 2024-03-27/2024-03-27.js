@@ -4,7 +4,7 @@ var Thermostat = /** @class */ (function () {
     }
     Object.defineProperty(Thermostat.prototype, "tempCelsius", {
         get: function () {
-            return "".concat(this._tempCelsius, "\u00B0C");
+            return this._tempCelsius;
         },
         set: function (newTemp) {
             this._tempCelsius = newTemp;
@@ -14,7 +14,7 @@ var Thermostat = /** @class */ (function () {
     });
     Object.defineProperty(Thermostat.prototype, "tempFahrenheit", {
         get: function () {
-            return "".concat((this._tempCelsius * 9 / 5 + 32), "\u00B0F");
+            return (this._tempCelsius * 9 / 5 + 32);
         },
         set: function (newTemp) {
             this._tempCelsius = (newTemp - 32) * 5 / 9;
