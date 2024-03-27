@@ -24,3 +24,24 @@ var Thermostat = /** @class */ (function () {
     });
     return Thermostat;
 }());
+var WaterPuifier = /** @class */ (function () {
+    function WaterPuifier(waterAmount) {
+        this._waterAmount = waterAmount;
+    }
+    Object.defineProperty(WaterPuifier.prototype, "waterAmount", {
+        get: function () {
+            return this._waterAmount;
+        },
+        set: function (amount) {
+            if (amount >= 0) {
+                this._waterAmount = amount;
+            }
+            else {
+                console.log("WaterAmount");
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return WaterPuifier;
+}());
