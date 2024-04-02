@@ -1,5 +1,5 @@
 import * as U from './util';
-export const picsumUrl = (width: number, height: number): string => `http://picsum.photosum.photos/${width}x${height}`;;
+export const picsumUrl = (width: number, height: number): string => `http://picsum.photosum.photos/${width}x${height}`;
 export const randomImage = (
     w: number = 1000,
     h: number = 800,
