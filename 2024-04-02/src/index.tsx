@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import * as D from './data';
+import { Component } from 'react';
 
 // const children = [
 //   <li>
