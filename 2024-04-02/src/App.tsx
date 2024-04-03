@@ -15,16 +15,35 @@ import { Component } from 'react';
 
 // ------------------------------------------------------------------------------------------------
 
- export default class App extends Component {
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <ul>
+//         <li>
+//           <a href="http://www.google.com">
+//             <p>go to google</p>
+//           </a>
+//         </li>
+//       </ul>
+//     )
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------
+
+export default class App extends Component {
   render() {
+    const isLoading = true;
+    if (isLoading) return <p>Loading...</p>
+
     return (
       <ul>
         <li>
           <a href="http://www.google.com">
-            <p>go to google</p>
+            <p>go to Google</p>
           </a>
         </li>
       </ul>
     )
   }
- }
+}
