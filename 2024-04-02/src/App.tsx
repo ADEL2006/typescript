@@ -1,5 +1,6 @@
 import * as D from './data';
 import { Component } from 'react';
+import ClassComponent from './ClassComponent';
 
 // export default function App() {
 //   return (
@@ -72,24 +73,37 @@ import { Component } from 'react';
 
 // ------------------------------------------------------------------------------------------------
 
+// export default class App extends Component {
+//   render() {
+//     const isLoading = true;
+//     const children = isLoading ? (
+//       <p>loading......</p>
+//     ) : (
+//       <ul>
+//         <li>
+//           <a href="http://www.google.com">
+//             <p>go to Google</p>
+//           </a>
+//         </li>
+//       </ul>
+//     )
+//     return (
+//       <div>
+//         <div>{children}</div>
+//       </div>
+//     )
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------
+
 export default class App extends Component {
   render() {
-    const isLoading = true;
-    const children = isLoading ? (
-      <p>loading......</p>
-    ) : (
-      <ul>
-        <li>
-          <a href="http://www.google.com">
-            <p>go to Google</p>
-          </a>
-        </li>
-      </ul>
-    )
     return (
-      <div>
-        <div>{children}</div>
-      </div>
+      <ul>
+        {/* <ClassComponent href="http://www.google.com" text="go to Google"/> */}
+        <ClassComponent href="http://www.twitter.com" text="go to Twitter"/>
+      </ul>
     )
   }
 }
