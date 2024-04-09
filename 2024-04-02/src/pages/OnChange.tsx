@@ -1,7 +1,7 @@
-export default function DispatchEvent(){
+export default function DispatchEvent() {
     const onCallDispatchEvent = () => {
         console.log('onCallDispatchEvent')
-        document.getElementById('root')?.dispatchEvent(new Event('click', {bubbles: true}));
+        document.getElementById('root')?.dispatchEvent(new Event('click', { bubbles: true }));
     }
     const onCallClick = () => {
         console.log('onCallClick');
