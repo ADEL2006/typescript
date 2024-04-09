@@ -1,4 +1,5 @@
 import * as D from './data';
+import P from './P';
 import { Component } from 'react';
 import ClassComponent from './ClassComponent';
 
@@ -97,13 +98,20 @@ import ClassComponent from './ClassComponent';
 
 // ------------------------------------------------------------------------------------------------
 
-export default class App extends Component {
-  render() {
-    return (
-      <ul>
-        {/* <ClassComponent href="http://www.google.com" text="go to Google"/> */}
-        <ClassComponent href="http://www.twitter.com" text="go to Twitter"/>
-      </ul>
-    )
-  }
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <ul>
+//         {/* <ClassComponent href="http://www.google.com" text="go to Google"/> */}
+//         <ClassComponent href="http://www.twitter.com" text="go to Twitter"/>
+//       </ul>
+//     )
+//   }
+// }
+
+// ------------------------------------------------------------------------------------------------
+
+export default function App() {
+  const texts = ['hello', 'world']. map((text, index) => <P key={index} children={text}/>)
+  return <div children={texts}/>
 }
