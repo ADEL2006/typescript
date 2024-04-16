@@ -4,7 +4,7 @@ export default function StopPropagation() {
     const onDivClick = (e: SyntheticEvent) => console.log('click event bulles on <div>');
     const onButtonClick = (e: SyntheticEvent) => {
         console.log('mouse click occurrs on <button> and call stopPropagation');
-        e.stopPropagaion();
+        e.stopPropagation();
     }
     return (
         <div onClick = {onDivClick}>
