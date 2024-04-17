@@ -4,6 +4,9 @@ import Style from './pages/Style'
 import UsingIcon from './pages/UsingIcon'
 import UsingIconWithCSSClass from './pages/UsingIconWithCSSClass'
 import './App.css'
+import Tailwindcss from './pages/Tailwindcss';
+import Color from './pages/Color';
+import TextsTest from './pages/TextsTest';
 
 export default function App() {
   return (
