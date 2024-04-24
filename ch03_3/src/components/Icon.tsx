@@ -1,4 +1,4 @@
-import { FC, DetailedHTMLProps, HTMLAttributes } from "react";
+import React, { FC, DetailedHTMLProps, HTMLAttributes } from 'react';
 
 type ReactSpanProps = DetailedHTMLProps<
   HTMLAttributes<HTMLSpanElement>,
@@ -8,9 +8,8 @@ type ReactSpanProps = DetailedHTMLProps<
 export type IconProps = ReactSpanProps & {
   name: string;
 };
-// prettier-ignore
-export const Icon: FC<IconProps> = ({name, className: _className, ...props}) => {
+
+export const Icon: FC<IconProps> = ({ name, className: _className, ...props }) => {
   const className = ['material-icons', _className].join(' ')
   return <span {...props} className={className}>{name}</span>
-  // return <span {...props} className={`material-icons ${_className || ''}`.trim()}>{name}</span>
 }

@@ -1,12 +1,12 @@
-import type {FC, DetailedHTMLProps, HTMLAttributes} from 'react'
-import {makeClassName} from './textUtil'
+import React, { FC, DetailedHTMLProps, HTMLAttributes } from 'react';
+import { makeClassName } from './textUtil';
 
 type TextProps = DetailedHTMLProps<
   HTMLAttributes<HTMLParagraphElement>,
   HTMLParagraphElement
->
+>;
 
-export type TitleProps = TextProps & {numberOfLines?: number}
+export type TitleProps = TextProps & { numberOfLines?: number };
 export const Title: FC<TitleProps> = ({
   className: _className,
   numberOfLines,
@@ -16,11 +16,11 @@ export const Title: FC<TitleProps> = ({
     'font-bold text-5xl text-center whitespace-pre-line',
     _className,
     numberOfLines
-  )
-  return <p {...props} className={className} />
-}
+  );
+  return <p {...props} className={className} />;
+};
 
-export type SubtitleProps = TitleProps & {}
+export type SubtitleProps = TitleProps & {};
 export const Subtitle: FC<SubtitleProps> = ({
   className: _className,
   numberOfLines,
@@ -30,11 +30,11 @@ export const Subtitle: FC<SubtitleProps> = ({
     'font-semibold text-3xl text-center whitespace-pre-line',
     _className,
     numberOfLines
-  )
-  return <p {...props} className={className} />
-}
+  );
+  return <p {...props} className={className} />;
+};
 
-export type SummaryProps = SubtitleProps & {}
+export type SummaryProps = SubtitleProps & {};
 export const Summary: FC<SummaryProps> = ({
   className: _className,
   numberOfLines,
@@ -44,11 +44,11 @@ export const Summary: FC<SummaryProps> = ({
     'text-sm whitespace-pre-line',
     _className,
     numberOfLines
-  )
-  return <p {...props} className={className} />
-}
+  );
+  return <p {...props} className={className} />;
+};
 
-export type ParagraphProps = SummaryProps & {}
+export type ParagraphProps = SummaryProps & {};
 export const Paragraph: FC<ParagraphProps> = ({
   className: _className,
   numberOfLines,
@@ -58,6 +58,6 @@ export const Paragraph: FC<ParagraphProps> = ({
     'font-normal text-base whitespace-pre-line',
     _className,
     numberOfLines
-  )
-  return <p {...props} className={className} />
-}
+  );
+  return <p {...props} className={className} />;
+};

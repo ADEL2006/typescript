@@ -10,6 +10,7 @@ import DisplayNoneTest from "./pages/DisplayNoneTest";
 import AvatarTest from "./pages/AvatarTest";
 import PositionTest from "./pages/PositionTest";
 import OverlayTest from "./pages/OverlayTest";
+import React from "react";
 
 export default function App() {
   return (
