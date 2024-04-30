@@ -1,4 +1,4 @@
-import {Title} from '../components'
+import { Title } from '../components'
 import * as D from '../data'
 import Card from './Card'
 
