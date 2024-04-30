@@ -2,11 +2,11 @@ import type { FC } from 'react';
 import { Div } from './Div';
 import type { DivProps } from './Div';
 
-export type AvartarProps = DivProps & {
+export type AvatarProps = DivProps & {
     size?: string;
 }
 
-export const Avatar: FC<AvartarProps> = ({
+export const Avatar: FC<AvatarProps> = ({
     className: _className, style, src, size, ...props
 }) => {
     const w_or_h = size ?? '3rem'
