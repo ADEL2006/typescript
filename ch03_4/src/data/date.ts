@@ -5,6 +5,7 @@ export const makeRandomPastDate = () => {
   const n = 100000
   return new Date(value - Math.floor(Math.random() * n * n))
 }
+
 export const makeRelativeDate = (date: Date) =>
   DateTime.fromJSDate(date).startOf('day').toRelative()
 export const randomRelativeDate = () => makeRelativeDate(makeRandomPastDate())

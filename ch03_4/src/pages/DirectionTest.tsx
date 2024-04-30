@@ -1,22 +1,25 @@
-// 206page
-import { Title, Div, Subtitle } from "../components";
-import * as D from "../data";
+import {Div, Title, Subtitle} from '../components'
+import * as D from '../data'
 
 export default function DirectionTest() {
   const boxes = D.range(1, 9 + 1).map(number => {
     return (
-      <p key={number} className={'border-2 border-blue-300 p-1 mt-1 ml-1'}>
+      <p key={number} className={`border-2 border-blue-300 p-1 mt-1 ml-1`}>
         {number}
       </p>
     )
   })
   return (
     <section className="mt-4">
-      <Title>Direction</Title>
+      <Title>DirectionTest</Title>
       <Div className="flex flex-row mt-4">
         <Div className="mr-2">
           <Subtitle>flex-row</Subtitle>
-          <Div className="flex flex-row">{boxes}</Div>
+          <Div className="flex flex-row p-4">{boxes}</Div>
+        </Div>
+        <Div className="mr-2">
+          <Subtitle>flex-row-reverse</Subtitle>
+          <Div className="flex flex-row-reverse p-4">{boxes}</Div>
         </Div>
         <Div className="mr-2">
           <Subtitle>flex-col</Subtitle>
