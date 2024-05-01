@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Clock from "./pages/Clock";
+// import Clock from "./pages/Clock";
 
 export default function App() {
   let today = new Date();
@@ -12,5 +12,5 @@ export default function App() {
     }, duration);
     return () => clearInterval(id);
   }, [])
-  return <Clock today={today} />;
+  // return <Clock today={today} />;
 }
