@@ -1,4 +1,4 @@
-import IserOrCreateTest from './pages/UserOrCreateTest'
+import UseOrCreateTest from './pages/UseOrCreateTest'
 import Memo from "./pages/Memo"
 import Callback from "./pages/Callback"
 import HighOrderCallback from './pages/HighOrderCallback'
@@ -8,7 +8,7 @@ function App() {
       <HighOrderCallback />
       <Callback />
       <Memo />
-      <UserOrCreateTest />
+      <UseOrCreateTest />
     </div>
   );
 }
