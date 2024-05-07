@@ -1,3 +1,4 @@
+import { useMemo, useCallback } from 'react';
 import { Title, Avatar } from '../components';
 import * as D from '../data';
 import { useOrCreate } from './useOrCreate';
@@ -8,10 +9,10 @@ export default function CreateOrUseTest() {
     ]);
     const users = useOrCreate<D.IUser[]>('users', () =>
         D.makeArray(100).map(D.makeRandomUser)
-    )
+    );
     const head = useOrCreate('head', () =>
         headTexts.map(text => <th key={text}>{text}</th>)
-    )
+    );
     const body = useOrCreate('children', () =>
         users.map((user, index) => (
             <tr key={user.uuid}>
@@ -24,18 +25,19 @@ export default function CreateOrUseTest() {
                 <td>{user.email}</td>
             </tr>
         ))
-    )
+    );
 
     return (
         <div className="mt-4">
             <Title>CreateOrUseTest</Title>
             <div className="overflow-x-auto mt-4 p-4">
-                <table className="table table-zebra table-compact w-full"></table>
-                <thead>
-                    <tr>{head}</tr>
-                </thead>
-                <tbody>{body}</tbody>
+                <table className="table table-zebra table-compact w-full">
+                    <thead>
+                        <tr>{head}</tr>
+                    </thead>
+                    <tbody>{body}</tbody>
+                </table>
             </div>
         </div>
-    )
+    );
 }
