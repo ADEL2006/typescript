@@ -14,4 +14,11 @@ export default function Callback() {
         )),
         [onClick]
     )
+
+    return (
+        <div className="mt-4">
+            <Title>Callback</Title>
+            <div className="flex justify-evenly mt-4">{buttons}</div>
+        </div>
+    )
 };
