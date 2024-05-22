@@ -27,7 +27,7 @@ export const Subtitle: FC<SubtitleProps> = ({
   ...props
 }) => {
   const className = makeClassName(
-    'italic text-center text-blue-400 text-5xl font-bold',
+    'font-semibold text-3xl text-center whitespace-pre-line',
     _className,
     numberOfLines
   )
