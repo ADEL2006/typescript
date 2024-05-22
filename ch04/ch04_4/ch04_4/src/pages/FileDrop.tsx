@@ -18,6 +18,7 @@ export default function FileDrop() {
     const [loading, toggleLoading] = useToggle(false);
 
     const inputRef = useRef<HTMLInputElement>(null);
+
     const onDivClick = useCallback(() => inputRef.current?.click(), []);
 
     const makeImageUrls = useCallback(
